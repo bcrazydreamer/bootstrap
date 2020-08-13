@@ -10,6 +10,11 @@
   margin-top: calc(var(--bs-gutter-y) * -1); // stylelint-disable-line function-blacklist
   margin-right: calc(var(--bs-gutter-x) / -2); // stylelint-disable-line function-blacklist
   margin-left: calc(var(--bs-gutter-x) / -2); // stylelint-disable-line function-blacklist
+  &::after,
+  &::before{
+    display: inline-block;
+    content: " ";
+  }
 }
 
 @mixin make-col-ready($gutter: $grid-gutter-width) {
